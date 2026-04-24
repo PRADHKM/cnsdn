@@ -1,5 +1,0 @@
-=== SDN Controller Log Initialized at 2026-04-24 12:20:07.423942 ===
-2026-04-24 12:20:07.425654 | PACKET-IN | Switch: s1 | Src: 10.0.0.1 | Dst: 10.0.0.2 | Proto: ICMP
-2026-04-24 12:20:07.426532 | FLOW-MOD | Switch: s1 | Rule: Forward to 10.0.0.2
-2026-04-24 12:20:08.428549 | PACKET-IN | Switch: s1 | Src: 10.0.0.3 | Dst: 10.0.0.1 | Proto: UDP
-2026-04-24 12:20:08.429472 | FLOW-MOD | Switch: s1 | Rule: Forward to 10.0.0.1
