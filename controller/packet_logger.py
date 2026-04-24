@@ -1,13 +1,13 @@
-from ryu.base import app_manager
-from ryu.controller import ofp_event
-from ryu.controller.handler import MAIN_DISPATCHER, CONFIG_DISPATCHER, set_ev_cls
-from ryu.ofproto import ofproto_v1_3
-from ryu.lib.packet import packet, ethernet, arp, ipv4, tcp, udp, icmp
+from os_ken.base import app_manager
+from os_ken.controller import ofp_event
+from os_ken.controller.handler import MAIN_DISPATCHER, CONFIG_DISPATCHER, set_ev_cls
+from os_ken.ofproto import ofproto_v1_3
+from os_ken.lib.packet import packet, ethernet, arp, ipv4, tcp, udp, icmp
 import json
 import os
 import datetime
 
-class PacketLogger(app_manager.RyuApp):
+class PacketLogger(app_manager.OSKenApp):
     OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]
 
     def __init__(self, *args, **kwargs):
